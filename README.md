@@ -2,7 +2,7 @@
 一个简单的代理测速工具
 
 ## 使用
-请准备好[Python3.8+](https://www.python.org/downloads/)环境，下载本程序，运行即可。
+请准备好[Python3.8+](https://www.python.org/downloads/)环境，下载[本程序](https://raw.githubusercontent.com/xhdndmm/proxy-test/refs/heads/main/proxy-test.py)，运行即可。
 
 ### 参数说明
 
@@ -19,14 +19,14 @@
 ### 例子
 默认测试：
 
-```
-python proxy_tester.py
+```shell
+python proxy-test.py
 ```
 
 自定义 HTTP 代理：
 
-```
-python proxy_tester.py \
+```shell
+python proxy-test.py \
     --proxy-protocol http \
     --proxy-host 127.0.0.1 \
     --proxy-port 7890
@@ -34,14 +34,14 @@ python proxy_tester.py \
 
 自定义测试次数和超时：
 
-```
-python proxy_tester.py -H 127.0.0.1 -P 7890 -n 100 -t 5
+```shell
+python proxy-test.py -H 127.0.0.1 -P 7890 -n 100 -t 5
 ```
 
 同时测试多个网站：
 
-```
-python proxy_tester.py \
+```shell
+python proxy-test.py \
     -u https://www.google.com/generate_204 \
     -u https://www.cloudflare.com \
     -u https://github.com \
@@ -50,8 +50,8 @@ python proxy_tester.py \
 
 并发测试：
 
-```
-python proxy_tester.py -n 100 -w 10 -t 5
+```shell
+python proxy-test.py -n 100 -w 10 -t 5
 ```
 
 ## 许可证
